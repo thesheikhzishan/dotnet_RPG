@@ -14,5 +14,7 @@ namespace dotnet_RPG.Dtos.Character
         public int defense { get; set; } = 10;
         public int intelligence  { get; set; } = 10;
         public RPGClass Class { get; set; } = RPGClass.Knight;
+        public GetWeaponDto? Weapon { get; set; }
+        public List<GetSkillDto>? Skills { get; set; }
     }
 }
