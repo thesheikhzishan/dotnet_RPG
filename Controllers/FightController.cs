@@ -31,5 +31,10 @@ namespace dotnet_RPG.Controllers
         public async Task<ActionResult<ServiceResponse<FightResultDto>>> Fight(FightRequestDto request) {
             return Ok(await _fightService.Fight(request));
         }
+
+        [HttpGet]
+        public async Task<ActionResult<ServiceResponse<List<HighScoreDto>>>> Fight() {
+            return Ok(await _fightService.GetHighScore());
+        }
     }
 }
