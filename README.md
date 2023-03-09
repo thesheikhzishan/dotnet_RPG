@@ -1,2 +1,2 @@
 # dotnet_RPG
-A collection of APIs developed using ASP.NET Core Web API with Entity Framework 
+A simple RPG game created using collection of APIs developed in ASP.NET Core Web API with Entity Framework.
