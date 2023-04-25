@@ -50,7 +50,7 @@ namespace dotnet_RPG.Data
             var response = new ServiceResponse<int>();
             if(await UserExists(user.UserName)) {
                 response.Success = false;
-                response.Message = "User Aready exists";
+                response.Message = "User Already exists";
                 return response;
             }
             CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
