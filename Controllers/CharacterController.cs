@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_RPG.Controllers
 {
-    [Authorize]
+    
     [ApiController]
     [Route("api/[controller]")]
     public class CharacterController : ControllerBase
